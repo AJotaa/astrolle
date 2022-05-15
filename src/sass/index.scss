@@ -1,0 +1,14 @@
+@import "variables";
+
+@import "default";
+
+//----- Pages
+@import "hero-section";
+@import "info-section";
+@import "features-section";
+@import "testimonial-section";
+//----- Layout
+@import "the-header";
+
+//----- UI
+@import "base-button.scss";

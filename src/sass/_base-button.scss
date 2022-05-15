@@ -1,0 +1,71 @@
+.btn-container {
+  color: #fff;
+  font-size: 1.1rem;
+
+  .btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+  }
+
+  .big-btn {
+    background: $purpple-gradient;
+    height: 71px;
+    width: 266px;
+    border-radius: 60px;
+    padding: 24px, 30px, 24px, 30px;
+
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  .big-btn:hover {
+    transform: scale(0.95);
+  }
+
+  .flat-btn {
+    height: 23px;
+    width: 95px;
+    border-radius: nullpx;
+
+    color: $soft-blue;
+    font-family: inherit;
+    background: transparent;
+    font-size: inherit;
+  }
+
+  .flat-btn:hover {
+    color: $purpple;
+  }
+
+  .flat-small-btn {
+    font-family: Rubik;
+    color: #272d4e;
+    font-weight: 500;
+    text-align: center;
+
+    font-family: inherit;
+    background: transparent;
+  }
+
+  .flat-small-btn:hover {
+    color: $blue;
+  }
+
+  .standard-btn {
+    height: 42px;
+    width: 205px;
+    border-radius: 100px;
+    padding: 12px, 30px, 12px, 30px;
+
+    color: inherit;
+    font-family: inherit;
+    background-color: $purpple;
+  }
+  .standard-btn:hover {
+    transform: scale(0.95);
+    background: $blue;
+  }
+}

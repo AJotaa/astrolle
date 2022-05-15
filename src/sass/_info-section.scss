@@ -1,0 +1,92 @@
+.info-section {
+  margin-bottom: 200px;
+  .info-container {
+    max-width: 1400px;
+    width: 90vw;
+    height: 100vh;
+    max-height: 760px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .info-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 760px;
+      text-align: center;
+
+      .info-title-container {
+        .info-title {
+          font-size: $large-font;
+          font-weight: 500;
+          line-height: 50px;
+          letter-spacing: 0em;
+          margin: 5px 0px;
+        }
+      }
+
+      .info-paragraph-container {
+        .info-paragraph {
+          font-family: Rubik;
+          font-size: $small-font;
+          font-weight: 400;
+          line-height: 30px;
+        }
+      }
+    }
+
+    .info-images-container {
+      width: 100%;
+      .info-images-list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .info-image-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          width: 20vw;
+          max-width: 375px;
+
+          .info-image {
+            width: 100%;
+            border-radius: 20px;
+          }
+
+          .info-image-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            width: 100%;
+
+
+            .info-image-title {
+              margin: 20px 0;
+              font-family: Mulish;
+              font-size: $medium-font;
+              font-weight: 700;
+            }
+
+            .info-image-paragraph {
+              margin: 0;
+              font-family: Mulish;
+              font-size: $small-font;
+              font-weight: 400;
+              text-align: center;
+              line-height: 130%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
