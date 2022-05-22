@@ -22,7 +22,8 @@
   }
 
   .big-btn:hover {
-    transform: scale(0.95);
+    transform: scale(1.02);
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.11);
   }
 
   .flat-btn {
@@ -54,6 +55,22 @@
     color: $blue;
   }
 
+  .control-btn {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: transparent;
+    opacity: 0.5;
+    margin: auto;
+  }
+
+  .control-btn:hover {
+    opacity: 1;
+    background: #fcfcfc;
+    color: #299ef3;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.11);
+  }
+
   .standard-btn {
     height: 42px;
     width: 205px;
@@ -65,7 +82,8 @@
     background-color: $purpple;
   }
   .standard-btn:hover {
-    transform: scale(0.95);
+    transform: scale(1.02);
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.11);
     background: $blue;
   }
 }

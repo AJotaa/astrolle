@@ -23,7 +23,7 @@ function FeaturesSection() {
         </div>
       </div>
 
-      <div className="features-container">
+      <div className="features-container container">
         <ul className="features-list">
           <li className="features-item features-item-one">
             <div className="features-image-container">

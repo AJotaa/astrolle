@@ -45,7 +45,7 @@ function InfoSection() {
 
   return (
     <section className="info-section">
-      <div className="info-container">
+      <div className="info-container container">
         <div className="info-text-container">
           <div className="info-title-container">
             <h2 className="info-title title-text">

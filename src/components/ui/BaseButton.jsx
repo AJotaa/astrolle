@@ -1,6 +1,7 @@
 import React from "react";
 
-function BaseButton({ mode, children }) {
+function BaseButton({ mode, children, onclick }) {
+
   if (mode === "big") {
     return (
       <div className="btn-container">
@@ -17,6 +18,12 @@ function BaseButton({ mode, children }) {
     return (
       <div className="btn-container">
         <button className="flat-small-btn btn">{children}</button>
+      </div>
+    );
+  } else if (mode === "btn-control") {
+    return (
+      <div className="btn-container">
+        <button className="control-btn btn" onClick={onclick}>{children}</button>
       </div>
     );
   } else {

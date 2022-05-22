@@ -6,7 +6,7 @@ import BaseButton from "../ui/BaseButton";
 function HeroSection() {
   return (
     <section className="hero-section">
-      <div className="hero-content">
+      <div className="hero-content container">
         <div className="hero-controls">
           <div className="hero-info">
             <div className="hero-title">
