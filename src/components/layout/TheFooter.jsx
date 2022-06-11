@@ -1,4 +1,5 @@
 import React from "react";
+import BaseForm from "../interface/BaseForm";
 
 function TheFooter() {
   const optionsData = [
@@ -101,20 +102,10 @@ function TheFooter() {
         </div>
         <div className="footer-options-container">
           <ul className="footer-options-list">{footerOptions}</ul>
-          <form className="footer-options-form">
-            <label className="footer-form-title" name="email">
-              Subscribe to our newsletter
-            </label>
-            <div className="footer-input-container">
-              <input type="text" className="footer-form-input" name="email" />
-              <button className="footer-form-btn">
-                <i className="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-          </form>
+          <BaseForm mode="newsletter" />
         </div>
         <div className="footer-rights-social">
-          <div></div>
+          <div className="space-div"></div>
           <div className="footer-rights-container">
             <span className="footer-rights">
               © Copyright 2020 Tickea. All Rights Reserved

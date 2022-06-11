@@ -6,7 +6,7 @@ import decoOne from "../../img/testimonial-section/deco-one.png";
 import decoTwo from "../../img/testimonial-section/deco-two.png";
 import decoThree from "../../img/testimonial-section/deco-three.png";
 import decoFour from "../../img/testimonial-section/deco-four.png";
-import BaseButton from "../ui/BaseButton";
+import BaseButton from "../interface/BaseButton";
 
 function TestimonialSection() {
   const [selection, setSelection] = useState(0);

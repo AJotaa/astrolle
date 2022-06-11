@@ -1,5 +1,5 @@
 .testimonial-section {
-  height: 100vh;
+  min-height: 100vh;
   min-height: 720px;
   max-height: 1080px;
   background: linear-gradient(
@@ -23,6 +23,7 @@
 
     .testimonial-title-container {
       max-width: 530px;
+
       .testimonial-title {
         font-size: $large-font;
         font-family: Rubik;
@@ -39,17 +40,15 @@
       grid-template-columns: 1.2fr 1.2fr 0.6fr;
       grid-gap: 50px;
       align-items: center;
-      height: 70vh;
-      max-height: 500px;
-      min-height: 450px;
       width: 100%;
 
       .testimonial-image-container {
-        height: 100%;
+        max-height: 100%;
         position: relative;
         max-width: 480px;
         overflow: hidden;
         object-fit: contain;
+        filter: drop-shadow(0px 12px 10px #86868688);
 
         .testimonial-image {
           height: 100%;
@@ -155,6 +154,83 @@
         .decoration-four {
           left: 30%;
           bottom: -100px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  .testimonial-section {
+    height: auto;
+
+    .testimonial-container {
+      .testimonial-title-container {
+        max-width: none;
+
+        .testimonial-title {
+          font-size: $medium-font;
+          line-height: 33px;
+          margin: 40px 0;
+        }
+      }
+
+      .testimonial-content-container {
+        max-height: none;
+        min-height: auto;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-rows: 300px 330px;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-items: center;
+
+        .testimonial-image-container {
+          height: 100%;
+          width: 80%;
+          overflow: visible;
+
+          .testimonial-image {
+            width: 100%;
+          }
+
+          .image-decoration {
+            width: 60px;
+            top: 15px;
+            left: 15px;
+          }
+        }
+
+        .testimonial-text-container {
+          height: 100%;
+
+          .tetimonial-text {
+            margin-top: 0;
+
+            .testimonial-quote-text {
+              font-family: Rubik;
+              font-size: 19px;
+              font-weight: 400;
+              line-height: 27px;
+            }
+          }
+
+          .testimonial-extra-features {
+            margin-top: 0;
+
+            .testimonial-controls {
+              width: 50%;
+              justify-content: space-around;
+              margin: 30px auto;
+            }
+          }
+        }
+
+        .testimonial-decoration-container {
+          display: none;
         }
       }
     }

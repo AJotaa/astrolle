@@ -1,7 +1,7 @@
 .info-section {
   // margin-bottom: 200px;
-  height: 100vh;
-  max-height: 800px;
+  height: auto;
+  // max-height: 800px;
   min-height: 720px;
   display: flex;
   align-items: center;
@@ -20,6 +20,7 @@
       width: 100%;
       max-width: 760px;
       text-align: center;
+      margin-bottom: 20px;
 
       .info-title-container {
         .info-title {
@@ -46,6 +47,7 @@
       .info-images-list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -55,9 +57,10 @@
           flex-direction: column;
           align-items: center;
           justify-content: space-between;
-          width: 20%;
-          min-width: 280px;
+          width: 27%;
+          min-width: 220px;
           max-width: 375px;
+          margin: 5px;
 
           .info-image {
             width: 100%;
@@ -70,9 +73,10 @@
             justify-content: space-between;
             text-align: center;
             width: 100%;
+            word-wrap: break-word;
 
             .info-image-title {
-              margin: 20px 0;
+              margin: 15px 0;
               font-family: Mulish;
               font-size: $medium-font;
               font-weight: 700;
@@ -85,6 +89,62 @@
               font-weight: 400;
               text-align: center;
               line-height: 130%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  .info-section {
+    .info-container {
+      .info-text-container {
+        .info-title-container {
+          .info-title {
+            font-size: $medium-font;
+            font-weight: 500;
+            line-height: 33px;
+          }
+        }
+
+        .info-paragraph-container {
+          .info-paragraph {
+            font-family: Rubik;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+
+      .info-images-container {
+        .info-images-list {
+          justify-content: center;
+
+          .info-image-item {
+            width: 100%;
+            min-width: none;
+            margin: 40px 0;
+
+            .info-image {
+              width: 100%;
+              overflow: hidden;
+              height: 200px;
+              min-height: none;
+              object-fit: cover;
+            }
+
+            .info-image-text {
+              .info-image-title {
+                margin: 20px 0;
+                font-family: Rubik;
+                font-size: 22px;
+                font-weight: 500;
+              }
             }
           }
         }

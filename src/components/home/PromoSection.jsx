@@ -1,6 +1,7 @@
 import React from "react";
-import imgOne from "../../img/promo_section/promo_img1.png";
-import imgTwo from "../../img/promo_section/promo_img2.png";
+import imgOne from "../../img/promo-section/promo_img1.png";
+import imgTwo from "../../img/promo-section/promo_img2.png";
+import DotsDecoration from "../decoration/DotsDecoration";
 
 function PromoSection() {
   return (
@@ -30,6 +31,7 @@ function PromoSection() {
           </div>
         </div>
       </div>
+      <DotsDecoration classLocation="decoration-one" />
     </section>
   );
 }

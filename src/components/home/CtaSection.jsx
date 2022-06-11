@@ -1,5 +1,5 @@
 import React from "react";
-import BaseButton from "../ui/BaseButton";
+import BaseButton from "../interface/BaseButton";
 
 function CtaSection() {
   const ctaData = [

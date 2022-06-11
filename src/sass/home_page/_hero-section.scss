@@ -73,3 +73,82 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .hero-section {
+    display: block;
+    min-height: 100vh;
+    max-width: 100vw;
+
+    .hero-content {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      min-height: 100vh;
+
+      .hero-controls {
+        width: 100%;
+
+        .hero-info {
+          text-align: center;
+          width: 100%;
+
+          .hero-title {
+            .hero-title-text {
+              font-size: 42px;
+              text-align: inherit;
+            }
+          }
+          .hero-paragraph {
+            width: 100%;
+
+            .hero-paragraph-text {
+              text-align: inherit;
+              line-height: 25px;
+              letter-spacing: 0.3px;
+            }
+          }
+        }
+
+        .hero-buttons {
+          .hero-buttons-list {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            width: 100%;
+
+            .hero-btn-item {
+              width: 100%;
+
+              .btn {
+                width: 100%;
+                height: 60px;
+                margin: 10px 0;
+              }
+            }
+          }
+        }
+      }
+
+      .hero-image-container {
+        position: relative;
+        height: 35vh;
+        min-height: 300px;
+        width: calc(100% + 5vw);
+        overflow: hidden;
+        
+
+        .hero-image-back {
+          max-height: 100%;
+          max-height: none;
+        }
+
+        .hero-image {
+          max-height: 100%;
+          max-width: none;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

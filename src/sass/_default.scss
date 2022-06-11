@@ -9,6 +9,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  .App {
+    overflow: hidden;
+  } 
+
 
 
   .container {
@@ -22,6 +26,17 @@ body {
   }
   .paragraph-text {
     color: $grey;
+  }
+
+  .features-dots-decoration {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10, 10px);
+    grid-template-rows: repeat(7, 10px);
+    grid-gap: 30px;
+    color: #3cdce781;
+    font-size: 1.5rem;
+    font-weight: 200;
   }
 }
 

@@ -3,12 +3,16 @@
 @import "default";
 
 //----- Pages
-@import "hero-section";
-@import "info-section";
-@import "features-section";
-@import "testimonial-section";
-@import "promo-section";
-@import "cta-section";
+//----- Home Page
+@import "./home_page/hero-section";
+@import "./home_page/info-section";
+@import "./home_page/features-section";
+@import "./home_page/testimonial-section";
+@import "./home_page/promo-section";
+@import "./home_page/cta-section";
+
+//------ Product Page
+@import "./product_page/register-section";
 
 //----- Layout
 @import "the-header";
@@ -16,3 +20,4 @@
 
 //----- UI
 @import "base-button.scss";
+@import "base-form.scss";

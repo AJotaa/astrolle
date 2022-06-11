@@ -3,24 +3,16 @@ import featuresOneImage from "../../img/features-section/features1.png";
 import featuresOneBackImage from "../../img/features-section/features1-back.png";
 import featuresTwoImage from "../../img/features-section/features2.png";
 import featuresTwoBackImage from "../../img/features-section/features2-back.png";
+import DotsDecoration from "../decoration/DotsDecoration";
 
 function FeaturesSection() {
-  const n = 70;
-
-  const dotsToDom = [...Array(n)].map((item, i) => {
-    return <span key={i}>+</span>;
-  });
 
   return (
     <section className="features-section">
       <div className="features-back-container">
         <div className="features-back"></div>
-        <div className="features-dots-decoration decoration-one">
-          {dotsToDom}
-        </div>
-        <div className="features-dots-decoration decoration-two">
-          {dotsToDom}
-        </div>
+        <DotsDecoration classLocation="decoration-one" />
+        <DotsDecoration classLocation="decoration-two" />
       </div>
 
       <div className="features-container container">

@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import heroImage from "../../img/hero-section/hero.png";
 import heroBack from "../../img/hero-section/hero-back.png";
-import BaseButton from "../ui/BaseButton";
+import BaseButton from "../interface/BaseButton";
 
 function HeroSection() {
   return (
@@ -26,14 +27,18 @@ function HeroSection() {
           <div className="hero-buttons">
             <ul className="hero-buttons-list">
               <li className="hero-btn-item">
-                <BaseButton mode={"big"} className="get-started">
-                  Empieza Ya
-                </BaseButton>
+                <Link to={"/product"}>
+                  <BaseButton mode={"big"} className="get-started">
+                    Empieza Ya
+                  </BaseButton>
+                </Link>
               </li>
               <li className="hero-btn-item">
-                <BaseButton mode={"flat"} className="register">
-                  Registrate
-                </BaseButton>
+                <Link to={"/product"}>
+                  <BaseButton mode={"flat"} className="register">
+                    Registrate
+                  </BaseButton>
+                </Link>
               </li>
             </ul>
           </div>
