@@ -1,5 +1,4 @@
 @import "variables";
-
 @import "default";
 
 //----- Pages
@@ -13,11 +12,18 @@
 
 //------ Product Page
 @import "./product_page/register-section";
+@import "./product_page/small-info-section";
+@import "./product_page/about-section";
+@import "./product_page/benefits-section";
 
 //----- Layout
-@import "the-header";
-@import "the-footer";
+@import "./layout/the-header";
+@import "./layout/the-footer";
 
 //----- UI
-@import "base-button.scss";
-@import "base-form.scss";
+@import "./interface/base-button.scss";
+@import "./interface/base-form.scss";
+@import "./interface/register-form.scss";
+
+//----- Decoration
+@import "./decoration//back-decoration.scss";

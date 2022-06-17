@@ -41,9 +41,13 @@
       grid-gap: 50px;
       align-items: center;
       width: 100%;
+      height: 60vh;
+      min-height: 460px;
+      max-height: 500px;
+      object-fit: contain;
 
       .testimonial-image-container {
-        max-height: 100%;
+        // max-height: 100%;
         position: relative;
         max-width: 480px;
         overflow: hidden;
@@ -68,6 +72,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+
         .tetimonial-text {
           margin-top: 20%;
           display: flex;

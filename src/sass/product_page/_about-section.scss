@@ -1,0 +1,64 @@
+.about-section {
+  margin: 150px 0 100px 0;
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .about-title-container {
+      text-align: center;
+      width: 50%;
+      max-width: 650px;
+
+      .about-title-header {
+        font-size: $large-font;
+        font-weight: 500;
+        line-height: 59px;
+        margin: 10px 0;
+      }
+
+      .about-title-paragraph {
+        font-size: $small-font;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+      }
+    }
+
+    .about-list-container {
+      margin-top: 20px;
+
+      .about-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 90px;
+
+        .about-item {
+          .about-item-icon {
+            i {
+              font-size: 27px;
+              color: #299EF3;
+            }
+          }
+          .about-item-header {
+            font-family: Mulish;
+            font-size: $medium-font;
+            font-weight: 700;
+            line-height: 40px;
+            margin: 12px 0;
+          }
+
+          .about-item-paragraph {
+            font-family: Mulish;
+            font-size: $small-font;
+            font-weight: 400;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

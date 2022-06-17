@@ -9,6 +9,11 @@
   z-index: 2;
   overflow: hidden;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .nav-bar {
     height: 100%;
     width: 90%;

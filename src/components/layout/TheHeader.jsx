@@ -1,11 +1,13 @@
 import React from "react";
 import BaseButton from "../interface/BaseButton";
+import { NavLink } from "react-router-dom";
 
 function TheHeader() {
   return (
     <header id="the-header">
       <nav className="nav-bar">
-        <div className="header-logo">TICKEA</div>
+        
+        <div className="header-logo"><NavLink to={"/"}>TICKEA</NavLink></div>
         <div className="header-links">
           <ul className="header-links-list">
             <li className="header-links-item">

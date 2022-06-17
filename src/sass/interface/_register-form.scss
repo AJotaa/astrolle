@@ -1,0 +1,67 @@
+.register-form {
+  .register-form-paragraph {
+    font-family: Rubik;
+    font-size: $small-font;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .register-form-query {
+    border-radius: 10px;
+    border: solid 2px #fff;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 40%;
+    max-height: 160px;
+    min-height: 120px;
+    overflow: hidden;
+
+    .input-div {
+      border-bottom: solid 2px #fff;
+      overflow: hidden;
+
+      .input-elem {
+        width: calc(100% - 20px);
+        height: 100%;
+        padding-left: 20px;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+
+      .input-elem,
+      .input-elem::placeholder {
+        color: #fff;
+        font-size: $small-font;
+        font-weight: 400;
+        opacity: 0.7;
+      }
+
+      .input-elem:focus {
+        background-color: rgba(0, 0, 0, 0.2);
+        opacity: 1;
+      }
+    }
+
+    div:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .register-form-button {
+    height: 18%;
+    max-height: 65px;
+
+    .btn-container {
+      height: 100%;
+      .btn {
+        height: 100%;
+        width: 50%;
+        max-width: 250px;
+        background-color: #fff;
+        color: #7854f7;
+        font-size: $small-font;
+      }
+    }
+  }
+}

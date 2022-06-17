@@ -1,0 +1,34 @@
+.small-info-section {
+  margin: 50px 0;
+
+  .small-info-container {
+    max-width: 1050px;
+    min-width: 650px;
+    margin: auto;
+
+    .small-info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 60px;
+
+      .small-info-item {
+        .small-info-header {
+          font-family: Mulish;
+          font-size: $medium-font;
+          font-weight: 700;
+          line-height: 46px;
+        }
+
+        .small-info-paragraph {
+          font-family: Mulish;
+          font-size: $small-font;
+          font-weight: 400;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

@@ -7,14 +7,14 @@ import TheFooter from "./components/layout/TheFooter";
 function App() {
   return (
     <div className="App">
-      <TheHeader />
       <BrowserRouter>
+        <TheHeader />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/product" element={<ProductPage />} />
         </Routes>
+        <TheFooter />
       </BrowserRouter>
-      <TheFooter />
     </div>
   );
 }
