@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BaseForm from "../interface/BaseForm";
 
 function TheFooter() {
@@ -11,7 +12,7 @@ function TheFooter() {
     {
       id: 2,
       name: "Politica de privacidad",
-      link: "/",
+      link: "/terms&conds",
     },
     {
       id: 3,
@@ -21,12 +22,12 @@ function TheFooter() {
     {
       id: 4,
       name: "Términos del servicios para empresas, agencias y freelancers",
-      link: "/",
+      link: "/terms&conds",
     },
     {
       id: 5,
       name: "Politica de manejo de datos",
-      link: "/",
+      link: "/terms&conds",
     },
     {
       id: 6,
@@ -36,7 +37,7 @@ function TheFooter() {
     {
       id: 7,
       name: "Terminos legales para compradores",
-      link: "/",
+      link: "/terms&conds",
     },
     {
       id: 8,
@@ -74,9 +75,11 @@ function TheFooter() {
   const footerOptions = optionsData.map((e) => {
     return (
       <li key={e.id} className="footer-options-item">
-        <a href={e.link} className="options-item">
+        <Link to={e.link} className="options-item">
+        {/* <a href={e.link} className="options-item"> */}
           {e.name}
-        </a>
+        {/* </a> */}
+        </Link>
       </li>
     );
   });

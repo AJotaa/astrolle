@@ -71,3 +71,55 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .register-section {
+    min-height: 100vh;
+  
+    .register-container {
+      width: 100vw;
+  
+      .register-background {
+        height: 30%;
+        width: 100%;
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        border-radius: 0;
+  
+        .register-content-container {
+          display: grid;
+          grid-template-rows: 0.5fr auto;
+          grid-template-columns: auto;
+          height: 80%;
+          max-height: none;
+          width: 90vw;
+          min-width: 0;
+  
+          .separador {
+            display: none;
+          }
+  
+          .register-content-div {
+            height: 100%;
+            width: 80%;
+  
+            .register-content {
+              height: auto;
+              width: 100%;
+              margin: 0;
+  
+              .register-text {
+                font-size: 28px;
+              }
+
+              .btn {
+                width: 100%;
+                max-width: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

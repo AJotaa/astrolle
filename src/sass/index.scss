@@ -15,6 +15,12 @@
 @import "./product_page/small-info-section";
 @import "./product_page/about-section";
 @import "./product_page/benefits-section";
+@import "./product_page/questions-section";
+@import "./product_page/more-info-section";
+@import "./product_page/ready-section";
+
+//------ Terms Page
+@import "./terms_page/links-section";
 
 //----- Layout
 @import "./layout/the-header";
@@ -24,6 +30,7 @@
 @import "./interface/base-button.scss";
 @import "./interface/base-form.scss";
 @import "./interface/register-form.scss";
+@import "./interface/base-drop.scss";
 
 //----- Decoration
 @import "./decoration//back-decoration.scss";

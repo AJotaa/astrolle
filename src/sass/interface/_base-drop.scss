@@ -1,0 +1,9 @@
+.drop-container {
+  width: 100%;
+
+  .drop-name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

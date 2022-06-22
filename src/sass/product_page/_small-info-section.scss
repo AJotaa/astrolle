@@ -32,3 +32,35 @@
     }
   }
 }
+
+
+@media (max-width: 700px) {
+  .small-info-section {
+  
+    .small-info-container {
+      min-width: 0;
+  
+      .small-info-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 10px;
+
+        .small-info-item {
+          text-align: center;
+
+          .small-info-header {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+          }
+  
+          // .small-info-paragraph {
+          //   font-family: Mulish;
+          // }
+        }
+      }
+    }
+  }
+}

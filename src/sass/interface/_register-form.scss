@@ -65,3 +65,9 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .register-form {
+    justify-content: space-evenly !important;
+  }
+}

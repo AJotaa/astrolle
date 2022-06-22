@@ -62,3 +62,40 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .about-section {
+    margin: 100px 0;
+
+    .about-container {
+      display: flex;
+  
+      .about-title-container {
+        width: 100%;
+  
+        .about-title-header {
+          font-size: $medium-font;
+          margin: 0;
+        }
+      }
+  
+      .about-list-container {
+        .about-list {
+          display: flex;
+          flex-direction: column;
+          grid-gap: 10px;
+  
+          .about-item {
+            text-align: center;
+
+            .about-item-header {
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

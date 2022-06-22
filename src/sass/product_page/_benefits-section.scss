@@ -76,3 +76,33 @@
     }
   }
 }
+
+
+
+@media (max-width: 700px) {
+  .benefits-section {
+  
+    .benefits-container {
+      padding-top: 50px;
+      margin-bottom: 50px;
+  
+      .benefits-title-container {
+  
+        .benefits-title {
+          font-size: $medium-font;
+        }
+      }
+  
+      .benefits-content-container {
+        display: flex;
+        flex-direction: column;
+  
+        .benefits-content-list {
+          .benefits-content-item {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
