@@ -21,6 +21,7 @@
 
 //------ Terms Page
 @import "./terms_page/links-section";
+@import "./terms_page/terms-content-section";
 
 //----- Layout
 @import "./layout/the-header";
@@ -31,6 +32,7 @@
 @import "./interface/base-form.scss";
 @import "./interface/register-form.scss";
 @import "./interface/base-drop.scss";
+@import "./interface/base-drop-list.scss";
 
 //----- Decoration
 @import "./decoration//back-decoration.scss";

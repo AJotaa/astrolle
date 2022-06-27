@@ -10,6 +10,10 @@ import ReadySection from "../components/product/ReadySection";
 import TestimonialSection from "../components/home/TestimonialSection";
 
 class ProductPage extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
+
   render() {
     return (
       <main className="product-page">

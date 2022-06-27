@@ -1,0 +1,138 @@
+.terms-content-section {
+  margin-bottom: 200px;
+
+  .terms-content-container {
+    width: 90vw;
+    max-width: 1600px;
+    margin: auto;
+
+    .terms-content-title-container {
+      text-align: center;
+
+      .terms-content-title {
+        font-size: $large-font;
+      }
+    }
+
+    .terms-content-info-container {
+      display: grid;
+      grid-template-columns: 1fr 4.5fr;
+      grid-gap: 100px;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+
+      .terms-nav-container {
+        color: $dark-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .terms-nav-title-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          .terms-nav-title {
+            font-family: Mulish;
+            font-size: 26px;
+            font-weight: 600;
+          }
+        }
+
+        .terms-nav-list {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          grid-gap: 20px;
+
+          .terms-nav-item {
+            .terms-nav-link {
+              font-family: Mulish;
+              font-size: 20px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .terms-info-text-container {
+        font-family: Mulish;
+
+        .terms-text-terms-list {
+          .terms-text-item {
+            width: 100%;
+            max-width: 1050px;
+            margin-bottom: 60px;
+
+            .terms-text-title {
+              font-size: $medium-font;
+              font-weight: 700;
+            }
+
+            .terms-text-paragraph {
+              font-size: $small-font;
+              font-weight: 400;
+              line-height: 30px;
+            }
+          }
+        }
+
+        .terms-text-section-title {
+          font-family: Rubik;
+          font-size: $large-font;
+          font-weight: 500;
+          margin-top: 100px;
+          margin-bottom: 70px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  .terms-content-section {
+    .terms-content-container {
+      .terms-content-title-container {
+        margin: 50px 0;
+
+        .terms-content-title {
+          font-size: 28px;
+        }
+      }
+
+      .terms-content-info-container {
+        grid-template-columns: auto;
+
+        .terms-nav-container {
+          display: none;
+        }
+
+        .terms-info-text-container {
+          .terms-text-terms-list {
+            .terms-text-item {
+              .terms-text-title {
+                font-size: 20px;
+              }
+            }
+          }
+
+          .terms-text-section-title {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}

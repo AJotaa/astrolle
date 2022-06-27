@@ -12,6 +12,7 @@
     height: 25%;
 
     .links-section-list {
+      display: flex;
       list-style: none;
       margin: 0;
       padding: 0;
@@ -30,6 +31,21 @@
         }
         .links-section-icon {
           margin-left: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  .links-section {
+    .links-section-container {
+      .links-section-list {
+        .links-section-item {
+          font-size: 13px;
           font-weight: 600;
         }
       }

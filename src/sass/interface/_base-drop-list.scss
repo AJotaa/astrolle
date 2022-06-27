@@ -1,0 +1,46 @@
+.drop-container {
+  width: auto;
+  z-index: 1;
+
+  a {
+    font-family: inherit;
+  }
+
+  .drop-icon {
+    color: #7854f7;
+    font-size: 30px;
+  }
+
+  .drop-list-container {
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    background-color: #7854f7;
+    color: rgb(255, 255, 255);
+    border-radius: 0 20px 20px 0;
+    top: 0px;
+    left: 0px;
+
+    .drop-list {
+      list-style: none;
+      margin: 30px auto;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+
+      .drop-item {
+        font-size: $small-font;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.back-drop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}

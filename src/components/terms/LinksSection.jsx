@@ -21,16 +21,16 @@ function LinksSection() {
 
   const linksList = linksData.map((e, i) => {
     return (
-      <il className="links-section-item" key={e.id}>
+      <li className="links-section-item" key={e.id}>
         <a href={e.link} className="links-section-link">
           {e.name}
         </a>
         {i < linksData.length - 1 && (
           <span className="links-section-icon">
-            <i class="fa-solid fa-chevron-right"></i>
+            <i className="fa-solid fa-chevron-right"></i>
           </span>
         )}
-      </il>
+      </li>
     );
   });
 

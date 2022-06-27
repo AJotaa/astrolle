@@ -7,6 +7,10 @@ import PromoSection from "../components/home/PromoSection";
 import TestimonialSection from "../components/home/TestimonialSection";
 
 class HomePage extends Component {
+  componentDidMount () {
+    window.scroll(0, 0);
+  }
+  
   render() {
     return (
       <main id="home-page">
