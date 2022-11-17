@@ -8,7 +8,7 @@ function BaseDropList({ data }) {
 
   const dataList = data.map((e) => {
     return (
-      <li className="drop-item">
+      <li className="drop-item" key={e.title}>
         <a href={e.link} className={e.class}>
           {e.title}
         </a>

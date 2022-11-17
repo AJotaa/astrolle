@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BaseButton from "../interface/BaseButton";
 
 function CtaSection() {
@@ -44,7 +45,9 @@ function CtaSection() {
             </h1>
           </div>
           <div className="cta-btn-container">
-            <BaseButton>Empieza ahora</BaseButton>
+            <Link to={"/product"}>
+              <BaseButton>Empieza ahora</BaseButton>
+            </Link>
           </div>
         </div>
         <div className="cta-features-container">

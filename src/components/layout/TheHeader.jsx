@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BaseButton from "../interface/BaseButton";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import BaseDropList from "../interface/BaseDropList";
 
 function TheHeader() {
@@ -64,10 +64,14 @@ function TheHeader() {
           <div className="header-buttons">
             <ul className="header-buttons-list">
               <li className="header-buttons-item">
-                <BaseButton mode={"flat-small"}>Ingresa</BaseButton>
+                <Link to={"/product"}>
+                  <BaseButton mode={"flat-small"}>Ingresa</BaseButton>
+                </Link>
               </li>
               <li className="header-buttons-item">
-                <BaseButton>Registra Mi Negocio</BaseButton>
+                <Link to={"/product"}>
+                  <BaseButton>Registra Mi Negocio</BaseButton>
+                </Link>
               </li>
             </ul>
           </div>

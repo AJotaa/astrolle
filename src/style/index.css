@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Rubik, Mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 body .App {
   overflow: hidden;
@@ -918,7 +923,6 @@ code {
   width: 100%;
   height: 100%;
   display: flex;
-  overflow: hidden;
 }
 .register-section .register-container .register-background .register-content-container .register-content-div .register-content {
   height: 80%;
@@ -927,6 +931,7 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  grid-gap: 5px;
 }
 .register-section .register-container .register-background .register-content-container .register-content-div .register-content p,
 .register-section .register-container .register-background .register-content-container .register-content-div .register-content h2 {
@@ -1540,6 +1545,7 @@ code {
   max-height: 88px;
   z-index: 2;
   overflow: hidden;
+  transition: all 0.3s ease-out;
 }
 #the-header a {
   text-decoration: none;
@@ -1605,7 +1611,6 @@ code {
   #the-header {
     display: none;
   }
-
   #the-header-mobile {
     position: fixed;
     display: block;
@@ -1633,7 +1638,6 @@ code {
     font-size: 30px;
     font-weight: 700;
   }
-
   #the-header-mobile.active {
     background: linear-gradient(#e5efff 0%, transparent 100%);
   }
@@ -1984,6 +1988,7 @@ code {
   background: transparent;
   border: none;
   outline: none;
+  transition: all 0.3s ease-out;
 }
 .register-form .register-form-query .input-div .input-elem,
 .register-form .register-form-query .input-div .input-elem::placeholder {

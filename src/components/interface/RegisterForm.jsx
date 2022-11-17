@@ -46,7 +46,7 @@ function RegisterForm() {
         </div>
         <div className="form-tlf input-div">
           <input
-            type="number"
+            type="tel"
             className="form-tlf-input input-elem"
             placeholder="Teléfono"
             onChange={handleTlf}
